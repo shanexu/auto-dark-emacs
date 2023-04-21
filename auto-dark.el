@@ -139,12 +139,12 @@ Argument APPEARANCE should be light or dark."
   (setq auto-dark--last-dark-mode-state appearance)
   (pcase appearance
     ('dark
-     (disable-theme auto-dark-light-theme)
-     (load-theme auto-dark-dark-theme t)
+     ;; (disable-theme auto-dark-light-theme)
+     ;; (load-theme auto-dark-dark-theme t)
      (run-hooks 'auto-dark-dark-mode-hook))
     ('light
-     (disable-theme auto-dark-dark-theme)
-     (load-theme auto-dark-light-theme t)
+     ;; (disable-theme auto-dark-dark-theme)
+     ;; (load-theme auto-dark-light-theme t)
      (run-hooks 'auto-dark-light-mode-hook))))
 
 (defvar auto-dark--timer nil)
